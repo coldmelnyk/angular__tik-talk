@@ -1,0 +1,39 @@
+:host {
+  display: block;
+  padding: 20px 12px;
+  background-color: black;
+  height: 100dvh;
+}
+
+.menu {
+  display: grid;
+  gap: 8px;
+  list-style: none;
+
+  &__item {
+    width: 100%;
+    padding: 16px 12px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: var(--light-color);
+    display: grid;
+    grid-template-columns: 16px 1fr max-content;
+    grid-gap: 12px;
+    align-items: center;
+    border-radius: 2px;
+
+    &__text {
+      text-align: left;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background-color: var(--dark-hover-color);
+      color: var(--primary-color);
+    }
+  }
+}
