@@ -23,6 +23,14 @@
     align-items: center;
     border-radius: 2px;
 
+    & svg {
+      display: block;
+      height: 16px;
+      width: 16px;
+      color: aqua;
+      background-color: red;
+    }
+
     &__text {
       text-align: left;
       font-weight: 700;
